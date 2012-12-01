@@ -5,5 +5,6 @@ describe Bowling, "#score" do
     bowling = Bowling.new
     20.times { bowling.hit(0) }
     bowling.score.should eq(0)
+    raise "I broke it"
   end
 end
