@@ -43,7 +43,6 @@ GEM
     i18n (0.6.1)
     journey (1.0.4)
     json (1.7.5)
-    libv8 (3.11.8.4)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -106,6 +105,5 @@ PLATFORMS
 DEPENDENCIES
   factory_girl_rails
   faker
-  libv8
   rails
   rspec-rails

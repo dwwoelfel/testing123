@@ -55,4 +55,4 @@ machine:
 notify:
   webhooks:
     # A list of hashes representing hooks. Only the url field is supported.
-    - url: http://requestb.in/1b4yege1
+    - url: http://requestb.in/1519sic1
