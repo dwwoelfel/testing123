@@ -1,5 +1,5 @@
 GIT
-  remote: https://gist.github.com/2873091.git
+  remote: http://gist.github.com/2873091.git
   revision: 2e1e123a00362ac46edbeadd0d925b74a80f956c
   specs:
     parallel_assets_compiler (0.2.0)
