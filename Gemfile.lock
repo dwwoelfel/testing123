@@ -1,3 +1,11 @@
+GIT
+  remote: https://gist.github.com/2873091.git
+  revision: 2e1e123a00362ac46edbeadd0d925b74a80f956c
+  specs:
+    parallel_assets_compiler (0.2.0)
+      actionpack
+      parallel
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -49,6 +57,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.19)
     multi_json (1.4.0)
+    parallel (0.6.1)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -105,5 +114,6 @@ PLATFORMS
 DEPENDENCIES
   factory_girl_rails
   faker
+  parallel_assets_compiler!
   rails
   rspec-rails
