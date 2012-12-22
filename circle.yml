@@ -3,3 +3,4 @@ machine:
     - curl http://dist.neo4j.org/neo4j-community-1.8.1-unix.tar.gz > neo4j-community-1.8.1-unix.tar.gz
     - tar -zxvf neo4j-community-1.8.1-unix.tar.gz
     - neo4j-community-1.8.1/bin/neo4j start &
+    - sleep 20
