@@ -2,3 +2,4 @@ machine:
   services:
     - elasticsearch
     - solr
+    - postgresql
