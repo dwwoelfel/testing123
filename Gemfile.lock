@@ -30,6 +30,8 @@ GEM
       activesupport (= 3.2.7)
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
+    activerecord-postgis-adapter (0.5.0)
+      rgeo-activerecord (~> 0.4.6)
     activeresource (3.2.7)
       activemodel (= 3.2.7)
       activesupport (= 3.2.7)
@@ -85,6 +87,11 @@ GEM
     rake (10.0.2)
     rdoc (3.12)
       json (~> 1.4)
+    rgeo (0.3.20)
+    rgeo-activerecord (0.4.6)
+      activerecord (>= 3.0.3)
+      arel (>= 2.0.6)
+      rgeo (>= 0.3.20)
     rspec (2.11.0)
       rspec-core (~> 2.11.0)
       rspec-expectations (~> 2.11.0)
@@ -113,6 +120,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-postgis-adapter
   factory_girl_rails
   faker
   parallel_assets_compiler!
