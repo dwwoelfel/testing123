@@ -10,4 +10,4 @@ database:
     - psql -U postgres -d template_postgis -c "create extension postgis"
     - mkdir -p config
     - "echo 'test:\n  adapter: postgis\n  encoding: unicode\n  database: circle_ruby_test\n  pool: 5\n  username: ubuntu\n  template: template_postgis' > config/database.yml"
-    - bundle exec rake db:create db:schema:load --trace
+    - RAILS_ENV=test RAKE_ENV=test bundle exec rake db:create db:schema:load --trace
