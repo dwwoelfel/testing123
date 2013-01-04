@@ -58,6 +58,7 @@ GEM
     mime-types (1.19)
     multi_json (1.4.0)
     parallel (0.6.1)
+    pg (0.14.1)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -115,5 +116,6 @@ DEPENDENCIES
   factory_girl_rails
   faker
   parallel_assets_compiler!
+  pg
   rails
   rspec-rails
