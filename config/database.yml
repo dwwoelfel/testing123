@@ -45,6 +45,7 @@ test:
   pool: 5
   username: testing123
   password:
+  template: template_postgis
 
 production:
   adapter: postgresql
