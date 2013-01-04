@@ -1,1 +1,6 @@
-
+test:
+  adapter: postgis
+  encoding: unicode
+  database: circle_ruby_test
+  pool: 5
+  username: ubuntu
