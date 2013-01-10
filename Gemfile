@@ -8,4 +8,4 @@ gem 'parallel_assets_compiler', git: "git://gist.github.com/2873091.git"
 gem 'pg'
 gem 'activerecord-postgis-adapter'
 gem 'therubyracer'
-gem 'libv8'
+gem 'libv8', "3.11.8.5"
