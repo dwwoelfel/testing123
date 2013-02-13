@@ -53,6 +53,7 @@ GEM
     i18n (0.6.1)
     journey (1.0.4)
     json (1.7.6)
+    libv8 (3.15.11.1)
     mail (2.4.4)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -122,6 +123,7 @@ DEPENDENCIES
   activerecord-postgis-adapter
   factory_girl_rails
   faker
+  libv8 (= 3.15.11.1)
   parallel_assets_compiler!
   pg
   rails
