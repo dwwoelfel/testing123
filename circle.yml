@@ -5,8 +5,3 @@ machine:
 database:
   override:
     - echo 'nope'
-
-dependencies:
-  pre:
-    - "[ $CIRCLE_NODE_INDEX == 0 ] && bundle exec rake spec:core"
-    - "[ $CIRCLE_NODE_INDEX == 1 ] && bundle exec rake spec:integration"
