@@ -6,4 +6,4 @@ deployment:
   master:
     branch: master
     commands:
-      - false
+      - exit 1
