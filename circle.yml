@@ -4,5 +4,6 @@ database:
 
 deployment:
   master:
+    branch: master
     commands:
       - false
