@@ -1,6 +1,7 @@
 dependencies:
   pre:
-    - nvm use 0.8.19 default
+    - nvm install 0.8.19
+    - nvm alias default 0.8.19
 
 database:
   override:
