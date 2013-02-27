@@ -2,12 +2,6 @@ machine:
   node:
     version: 0.8.20
 
-dependencies:
-  pre:
-    - nvm install 0.8.19
-    - nvm alias default 0.8.19
-    - curl -sS https://getcomposer.org/installer | php
-
 database:
   override:
     - node --version
