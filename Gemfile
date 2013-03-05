@@ -1,4 +1,4 @@
-source :rubygems
+source 'https://rubygems.org'
 
 gem 'rake', '10.0.3'
 gem 'i18n', '0.6.4'
