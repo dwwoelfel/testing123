@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
-gem 'rake', '10.0.3'
+gem 'curb'
+gem 'rake', '10.0.2'
 gem 'i18n', '0.6.4'
 gem 'multi_json', '1.6.1'
 gem 'activesupport', '3.2.12'
