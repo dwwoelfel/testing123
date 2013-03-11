@@ -1,6 +1,8 @@
 machine:
   node:
     version: 0.8.19
+  php:
+    version: 5.4.9
 
 database:
   override:
