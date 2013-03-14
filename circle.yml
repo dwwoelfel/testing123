@@ -1,6 +1,6 @@
 machine:
   pre:
-    - echo "hi daniel"
+    - exit 1
 
 database:
   override:
