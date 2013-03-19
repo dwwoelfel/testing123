@@ -7,8 +7,6 @@ dependencies:
     - echo "this is a pre from yml"
   override:
     - echo "this is an overrride from yml"
-  post:
-    - echo "this is a post from yml"
 
 deployment:
   master:
