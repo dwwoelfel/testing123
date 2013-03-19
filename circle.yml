@@ -1,10 +1,14 @@
-machine:
-  ruby:
-    version: jruby-1.7.2
-
 database:
   override:
     - node --version
+
+dependencies:
+  pre:
+    - echo "this is a pre from yml"
+  override:
+    - echo "this is an overrride from yml"
+  post:
+    - echo "this is a post from yml"
 
 deployment:
   master:
