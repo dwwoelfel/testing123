@@ -2,12 +2,6 @@ database:
   override:
     - node --version
 
-dependencies:
-  pre:
-    - echo "this is a pre from yml"
-  override:
-    - echo "this is an overrride from yml"
-
 deployment:
   master:
     branch: master
