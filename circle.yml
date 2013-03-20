@@ -1,6 +1,8 @@
 machine:
+  pre:
+    - echo "hi daniel"
   services:
-    - redis
+    - redis-server
 
 database:
   override:
