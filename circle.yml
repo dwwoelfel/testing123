@@ -8,6 +8,10 @@ database:
   override:
     - node --version
 
+test:
+  override:
+    - sh parallel.sh
+
 deployment:
   master:
     branch: master
