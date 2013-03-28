@@ -6,7 +6,7 @@
 # cd ~/projects/testing123
 
 i=0
-files=()
+files=( )
 for file in $(find ./spec -name "*_spec.rb")
 do
   if [[ $(($i % $CIRCLE_NODE_TOTAL)) -eq $CIRCLE_NODE_INDEX ]]
