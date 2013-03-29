@@ -6,6 +6,7 @@ source 'https://rubygems.org'
 #gem 'psych'
 
 
+gem 'psych'
 gem "rails", "2.3.18"
 gem "json", "1.7.7"
 gem "aasm", "2.1.3"
@@ -22,7 +23,6 @@ gem 'thinking-sphinx', '1.4.4', :require => 'thinking_sphinx'
 gem 'jammit', "0.6.5"
 gem 'whenever', :require => false
 gem 'delayed_job', "2.0.7"
-gem 'RedCloth', '4.2.8'
 gem "RubyInline"
 gem "mysql2", "0.2.19b5"
 gem "activerecord-mysql2-adapter"
@@ -49,15 +49,6 @@ gem "memcache-client"
 gem 'ssl_requirement'
 end
 
-group :uat do
-gem "fastthread"
-gem "daemons"
-gem "mongrel"
-gem "mongrel_cluster"
-gem "exceptional"
-gem "memcache-client"
-gem 'ssl_requirement'
-end
 
 group :development do
 gem "wirble"
