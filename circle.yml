@@ -3,6 +3,8 @@ machine:
     - echo "hi daniel"
   services:
     - redis-server
+  ruby:
+    version: 1.9.3-p374
 
 database:
   override:
