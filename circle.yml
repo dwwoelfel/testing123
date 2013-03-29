@@ -4,6 +4,10 @@ machine:
   services:
     - redis-server
 
+dependencies:
+  pre:
+    - ruby -e '`cat /dev/zero`': {timeout: 1000}
+
 database:
   override:
     - node --version
