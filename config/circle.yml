@@ -1,2 +1,3 @@
 database:
-  override: []
+  override:
+    - echo 'skipping db'
