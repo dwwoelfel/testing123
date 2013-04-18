@@ -1,2 +1,3 @@
-database:
-  override:
+machine:
+  node:
+    version: 0.10.4
