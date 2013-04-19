@@ -1,1 +1,3 @@
-
+dependency:
+  post:
+    - echo hi
