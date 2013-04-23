@@ -1,3 +1,7 @@
+machine:
+  php:
+    version: 5.4.6
+
 dependency:
-  post:
-    - echo hi
+  pre:
+    - sed -i 's/^;//' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini
