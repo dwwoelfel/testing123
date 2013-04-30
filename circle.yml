@@ -2,6 +2,6 @@ machine:
   php:
     version: 5.4.6
 
-dependencies:
-  pre:
-    - sed -i 's/^;//' ~/.phpenv/versions/$(phpenv global)/etc/conf.d/xdebug.ini
+database:
+  override:
+    - echo skip db
