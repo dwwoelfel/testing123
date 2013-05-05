@@ -2,6 +2,11 @@ machine:
   php:
     version: 5.4.6
 
+checkout:
+  override:
+    - pwd
+    - git fetch
+
 database:
   override:
     - echo skip db
