@@ -2,10 +2,9 @@ machine:
   php:
     version: 5.4.6
 
-checkout:
-  override:
-    - pwd
-    - git fetch
+notify:
+  webhooks:
+    - http://requestb.in/p07wg7p0
 
 database:
   override:
