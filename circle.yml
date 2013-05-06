@@ -4,7 +4,7 @@ machine:
 
 notify:
   webhooks:
-    - http://requestb.in/p07wg7p0
+    - url: http://requestb.in/p07wg7p0
 
 database:
   override:
