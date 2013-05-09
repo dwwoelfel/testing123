@@ -1,6 +1,6 @@
 machine:
-  php:
-    version: 5.4.6
+  node:
+    version: 0.10.0
 
 notify:
   webhooks:
