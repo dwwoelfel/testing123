@@ -2,10 +2,6 @@ machine:
   node:
     version: 0.10.0
 
-notify:
-  webhooks:
-    - url: http://requestb.in/p07wg7p0
-
 database:
   override:
     - echo skip db
