@@ -5,3 +5,12 @@ machine:
 database:
   override:
     - echo skip db
+
+
+test:
+  pre:
+    - echo $CIRCLE_NODE_INDEX
+  override:
+    - echo $CIRCLE_NODE_INDEX
+  post:
+    - echo $CIRCLE_NODE_INDEX
