@@ -2,7 +2,7 @@
   "name": "naive",
   "description": "A package using naive versioning",
   "author": "A confused individual <iam@confused.com>",
-  "version": "0.1.1"
+  "version": "0.1.1",
   "dependencies": {
     "express": ">= 1.2.0",
     "optimist": ">= 0.1.0"
