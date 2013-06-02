@@ -4,9 +4,9 @@ machine:
 
 dependencies:
   pre:
-    node -v
+    - node -v
   post:
-    node -v
+    - node -v
 
 database:
   override:
