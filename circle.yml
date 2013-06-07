@@ -1,6 +1,12 @@
+machine:
+  services:
+    - neo4j
+
 dependencies:
   pre:
-    - node -v
+    - ps aux
+    - cat /var/log/neo4j/console.log
+    - cat /var/log/neo4j/neo4j.0.0.log
   post:
     - node -v
 
