@@ -1,6 +1,8 @@
 machine:
   services:
     - neo4j
+  java:
+    version: oraclejdk6
 
 dependencies:
   pre:
