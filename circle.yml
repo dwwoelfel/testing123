@@ -1,6 +1,8 @@
 machine:
   services:
     - neo4j
+  php:
+    version: 5.4.4
   java:
     version: oraclejdk6
 
