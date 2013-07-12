@@ -1,18 +1,10 @@
 machine:
   services:
-    - neo4j
+    - elasticsearch
   php:
     version: 5.4.4
   java:
     version: oraclejdk6
-
-dependencies:
-  pre:
-    - ps aux
-    - cat /var/log/neo4j/console.log
-    - cat /var/log/neo4j/neo4j.0.0.log
-  post:
-    - node -v
 
 database:
   override:
