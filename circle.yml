@@ -9,24 +9,3 @@ machine:
 database:
   override:
     - echo skip db
-
-dependencies:
-  override:
-    - echo 'export "MAVEN_OPTS=-Xmx512M -Xms512M -XX:PermSize=128M -XX:MaxPermSize=128M"' >> ~/.circlerc
-    - echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?><settings><profiles><profile><id>nexus</id><repositories><repository><id>central</id><url>http://central</url><releases><enabled>true</enabled></releases><snapshots><enabled>true</enabled></snapshots></repository></repositories><pluginRepositories><pluginRepository><id>central</id><url>http://central</url><releases><enabled>true</enabled></releases><snapshots><enabled>true</enabled></snapshots></pluginRepository></pluginRepositories></profile><profile><id>default</id></profile></profiles><activeProfiles><activeProfile>default</activeProfile></activeProfiles><pluginGroups><pluginGroup>org.mortbay.jetty</pluginGroup></pluginGroups><servers><server><id>storably.omnibus</id><username>todd</username><password>{PqCToBexbXoHsoADBeasO38TB3IbS24Rfuol+WRsyy4=}</password></server><server><id>storably.internal</id><username>todd</username><password>{PqCToBexbXoHsoADBeasO38TB3IbS24Rfuol+WRsyy4=}</password></server></servers></settings>" > ~/.m2/settings.xml
-    - echo "<settingsSecurity><master>{ZnFdkLvoE00HSbQBcSjffR1vcMrhRsBp12z9ir22h+c=}</master></settingsSecurity>" >  ~/.m2/settings-security.xml
-
-test:
-  override:
-    - echo "Downloading and Installing Zinc"
-    - wget http://repo.typesafe.com/typesafe/zinc/com/typesafe/zinc/dist/0.2.5/zinc-0.2.5.tgz
-    - tar -zxvf zinc-0.2.5.tgz
-    - echo "Modifying Zinc config to use smaller memory footprint"
-    - sed -e s/-Xms1536m/-Xms512m/g zinc-0.2.5/bin/zinc > zinc.tmp
-    - sed -e s/-Xmx1536m/-Xmx512m/g zinc-0.2.5/bin/zinc > zinc.tmp
-    - sed -e s/=384m/=128m/g zinc-0.2.5/bin/zinc > zinc.tmp
-    - sed -e s/=192m/=128m/g zinc-0.2.5/bin/zinc > zinc.tmp
-    - mv zinc.tmp zinc-0.2.5/bin/zinc
-    - chmod 755 zinc-0.2.5/bin/zinc
-    - echo "Executing tests"
-    - zinc-0.2.5/bin/zinc -start && mvn test
