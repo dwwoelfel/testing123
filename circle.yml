@@ -1,3 +1,8 @@
 database:
   override:
     - echo skip db
+
+dependencies:
+  pre:
+    - rvm reinstall 1.9.3 --patch railsexpress
+    - rvm --default use 1.9.3-railsexpress
