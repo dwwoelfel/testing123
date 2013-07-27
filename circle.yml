@@ -4,6 +4,6 @@ database:
 
 dependencies:
   pre:
-    - rvm --default use 1.9.3
-    - rvm reinstall 1.9.3 --patch railsexpress
+    - rvm reinstall 1.9.3 --patch railsexpress -n railsexpress
+    - rvm --default use 1.9.3-railsexpress
     - ruby -v
