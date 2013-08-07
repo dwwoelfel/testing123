@@ -2,14 +2,6 @@ database:
   override:
     - echo skip db
 
-test:
-  override:
-    - echo skip tests
-
-dependencies:
-  override:
-    - echo skip deps
-
 deployment:
   stage:
     branch: /.+/
