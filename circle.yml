@@ -5,5 +5,5 @@ database:
 deployment:
   stage:
     branch: /.+/
-    commands:
-      - echo deploying
+    heroku:
+      - git push git@heroku.com:foo-bar-123.git $CIRCLE_SHA1:refs/heads/master
