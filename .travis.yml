@@ -1,2 +1,2 @@
 language: ruby
-before_install: ./clone-rails
+before_install: ./clone-rails.sh
