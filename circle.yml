@@ -1,7 +1,3 @@
-branches:
-  ignore:
-    - new
-
 database:
   override:
     - echo skip db
