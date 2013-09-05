@@ -2,16 +2,8 @@ database:
   override:
     - echo skip db
 
-test:
-  override:
-    - echo skip tests
-
-dependencies:
-  override:
-    - echo skip deps
-
 deployment:
   stage:
     branch: /.+/
     commands:
-      - echo deploying
+      - git push git@heroku.com:circleci.git $CIRCLE_SHA1:refs/heads/master
