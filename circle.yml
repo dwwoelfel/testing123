@@ -7,3 +7,7 @@ deployment:
     branch: /.+/
     commands:
       - git push git@heroku.com:circleci.git $CIRCLE_SHA1:refs/heads/master
+
+notify:
+  webhooks:
+    - http://requestb.in/1h5g42g1
