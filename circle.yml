@@ -1,17 +1,17 @@
-machine:
-  python:
-    version: 2.7.3
+# machine:
+#   python:
+#     version: 2.7.3
 
-database:
-  override:
-    - echo skip db
+# database:
+#   override:
+#     - echo skip db
 
-deployment:
-  stage:
-    branch: /.+/
-    commands:
-      - git push git@heroku.com:circleci.git $CIRCLE_SHA1:refs/heads/master
+# deployment:
+#   stage:
+#     branch: /.+/
+#     commands:
+#       - git push git@heroku.com:circleci.git $CIRCLE_SHA1:refs/heads/master
 
-notify:
-  webhooks:
-    - url: http://requestb.in/1k5dzpe1
+# notify:
+#   webhooks:
+#     - url: http://requestb.in/1k5dzpe1
