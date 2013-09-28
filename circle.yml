@@ -2,9 +2,9 @@
 #   python:
 #     version: 2.7.3
 
-# database:
-#   override:
-#     - echo skip db
+database:
+  override:
+    - echo skip db
 
 # deployment:
 #   stage:
