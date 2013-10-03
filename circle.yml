@@ -5,6 +5,7 @@
 machine:
   services:
     - cassandra
+    - elasticsearch
 
 database:
   override:
