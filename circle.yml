@@ -2,6 +2,10 @@
 #   python:
 #     version: 2.7.3
 
+machine:
+  services:
+    - cassandra
+
 database:
   override:
     - echo skip db
