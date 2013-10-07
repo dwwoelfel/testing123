@@ -3,9 +3,8 @@
 #     version: 2.7.3
 
 machine:
-  services:
-    - cassandra
-    - elasticsearch
+  ruby:
+    version: 2.0.0-p0
 
 database:
   override:
