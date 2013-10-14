@@ -6,7 +6,7 @@ machine:
   ruby:
     version: 2.0.0-p0
   environment:
-    PATH: "~/testing123:$PATH"
+    PATH: /home/ubuntu/testing123/vendor/imagemagic/bin:$PATH
 
 database:
   override:
