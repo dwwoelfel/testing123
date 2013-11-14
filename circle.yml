@@ -3,7 +3,14 @@ machine:
   ruby:
     version: 2.0.0-p0
   hosts:
-    "platform.dev clinic.platform.dev api.platform.dev developer.platform.dev admin.platform.dev assets0.platform.dev assets1.platform.dev assets2.platform.dev": 127.0.0.1
+    platform.dev: 127.0.0.1
+    clinic.platform.dev: 127.0.0.1
+    api.platform.dev: 127.0.0.1
+    developer.platform.dev: 127.0.0.1
+    admin.platform.dev: 127.0.0.1
+    assets0.platform.dev: 127.0.0.1
+    assets1.platform.dev: 127.0.0.1
+    assets2.platform.dev: 127.0.0.1
 
 
 
