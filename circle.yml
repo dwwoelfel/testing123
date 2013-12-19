@@ -7,6 +7,10 @@ database:
   override:
     - echo skip db
 
+dependencies:
+  cache_directories:
+    - "~/bin"
+
 # deployment:
 #   stage:
 #     branch: /.+/
