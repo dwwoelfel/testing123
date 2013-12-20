@@ -3,9 +3,9 @@ machine:
   ruby:
     version: 2.0.0-p0
 
-database:
-  override:
-    - echo skip db
+# database:
+#   override:
+#     - echo skip db
 
 dependencies:
   cache_directories:
