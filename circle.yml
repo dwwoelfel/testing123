@@ -20,4 +20,6 @@ dependencies:
 #   webhooks:
 #     - url: http://requestb.in/1k5dzpe1
 
-
+notify:
+  webhooks:
+    - url: http://requestb.in/xu2dttxu
