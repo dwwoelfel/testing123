@@ -20,4 +20,7 @@ dependencies:
 #   webhooks:
 #     - url: http://requestb.in/1k5dzpe1
 
-
+general:
+  branches:
+    ignore:
+      - gh-pages2
