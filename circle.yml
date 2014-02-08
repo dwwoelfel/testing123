@@ -4,7 +4,7 @@ machine:
 
 dependencies:
   pre:
-    - [[ -d elasticsearch-0.90.11 ]] || (wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.11.tar.gz && tar -xvf elasticsearch-0.90.11.tar.gz)
+    - "[[ -d elasticsearch-0.90.11 ]] || (wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.11.tar.gz && tar -xvf elasticsearch-0.90.11.tar.gz)"
     - elasticsearch-0.90.11/bin/elasticsearch:
         background: true
 
