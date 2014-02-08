@@ -1,14 +1,23 @@
 machine:
   ruby:
-    version: 2.0.0-p195
+    version: 1.9.3-p194
+
+dependencies:
+  pre:
+    - [[ -d elasticsearch-0.90.11 ]] || (wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.11.tar.gz && tar -xvf elasticsearch-0.90.11.tar.gz)
+    - elasticsearch-0.90.11/bin/elasticsearch:
+        background: true
+
+  cache_directories:
+    - elasticsearch-0.90.11
 
 # database:
 #   override:
 #     - echo skip db
 
-dependencies:
-  cache_directories:
-    - "~/bin"
+# dependencies:
+#   cache_directories:
+#     - "~/bin"
 
 # deployment:
 #   stage:
