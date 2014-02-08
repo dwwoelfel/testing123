@@ -4,7 +4,9 @@ machine:
 
 dependencies:
   pre:
-    - "[[ -d elasticsearch-0.90.11 ]] || (wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.11.tar.gz && tar -xvf elasticsearch-0.90.11.tar.gz)"
+    - wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.11.tar.gz
+    - tar -xvf elasticsearch-0.90.11.tar.gz
+    - elasticsearch-0.90.11/bin/plugin -install elasticsearch/elasticsearch-analysis-icu/2.0.0.RC1
     - elasticsearch-0.90.11/bin/elasticsearch:
         background: true
 
