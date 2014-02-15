@@ -1,16 +1,25 @@
 
 machine:
   ruby:
-    version: 2.0.0-p195
-  timezone: GMT
+    version: 1.9.3-p194
+
+dependencies:
+  pre:
+    - wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.10.tar.gz
+    - tar -xvf elasticsearch-0.90.10.tar.gz
+    - elasticsearch-0.90.10/bin/elasticsearch:
+        background: true
+
+  cache_directories:
+    - elasticsearch-0.90.11
 
 # database:
 #   override:
 #     - echo skip db
 
-dependencies:
-  cache_directories:
-    - "~/bin"
+# dependencies:
+#   cache_directories:
+#     - "~/bin"
 
 # deployment:
 #   stage:
@@ -21,3 +30,8 @@ dependencies:
 # notify:
 #   webhooks:
 #     - url: http://requestb.in/1k5dzpe1
+
+general:
+  branches:
+    ignore:
+      - gh-pages2
