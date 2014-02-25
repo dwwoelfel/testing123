@@ -3,15 +3,12 @@ machine:
   ruby:
     version: 1.9.3-p194
 
-dependencies:
-  pre:
-    - wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.10.tar.gz
-    - tar -xvf elasticsearch-0.90.10.tar.gz
-    - elasticsearch-0.90.10/bin/elasticsearch:
-        background: true
 
-  cache_directories:
-    - elasticsearch-0.90.11
+dependencies:
+  post:
+    - wget https://selenium.googlecode.com/files/selenium-server-standalone-2.39.0.jar
+    - java -jar selenium-server-standalone-2.39.0.jar:
+        background: true
 
 # database:
 #   override:
