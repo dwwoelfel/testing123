@@ -9,6 +9,8 @@ dependencies:
     - wget https://selenium.googlecode.com/files/selenium-server-standalone-2.39.0.jar
     - java -jar selenium-server-standalone-2.39.0.jar:
         background: true
+    - sleep 10
+    - ps aux | grep java
 
 # database:
 #   override:
