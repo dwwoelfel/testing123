@@ -1,36 +1,3 @@
-
 machine:
   ruby:
     version: 1.9.3-p194
-
-
-dependencies:
-  post:
-    - wget https://selenium.googlecode.com/files/selenium-server-standalone-2.39.0.jar
-    - java -jar selenium-server-standalone-2.39.0.jar:
-        background: true
-    - sleep 10
-    - ps aux | grep java
-
-# database:
-#   override:
-#     - echo skip db
-
-# dependencies:
-#   cache_directories:
-#     - "~/bin"
-
-# deployment:
-#   stage:
-#     branch: /.+/
-#     commands:
-#       - git push git@heroku.com:circleci.git $CIRCLE_SHA1:refs/heads/master
-
-# notify:
-#   webhooks:
-#     - url: http://requestb.in/1k5dzpe1
-
-general:
-  branches:
-    ignore:
-      - gh-pages2
