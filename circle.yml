@@ -3,3 +3,7 @@ machine:
     - elasticsearch
   ruby:
     version: 1.9.3-p194
+
+dependencies:
+  override:
+    - pip install -r requirements.txt --allow-unverified
