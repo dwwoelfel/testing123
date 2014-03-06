@@ -6,4 +6,4 @@ machine:
 
 dependencies:
   override:
-    - pip install -r requirements.txt --allow-unverified
+    - pip install -r requirements.txt --allow-unverified pyPdf
