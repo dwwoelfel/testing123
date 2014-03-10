@@ -7,10 +7,10 @@ machine:
 
 dependencies:
   cache_directories:
-    - elasticsearch-0.90.10 # relative to the build directory
-  override:
-    - if [[ ! -e elasticsearch-0.90.10 ]]; then wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.10.tar.gz && tar -xvf elasticsearch-0.90.10.tar.gz
-    - elasticsearch-0.90.10/bin/elasticsearch: {background: true}
+    - elasticsearch-1.0.1 # relative to the build directory
+  post:
+    - if [[ ! -e elasticsearch-1.0.1 ]]; then wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.0.1.tar.gz && tar -xvf elasticsearch-1.0.1.tar.gz
+    - elasticsearch-1.0.1/bin/elasticsearch: {background: true}
 
 database:
   override:
