@@ -4,3 +4,14 @@ machine:
   services:
     - riak
 
+
+dependencies:
+  cache_directories:
+    - elasticsearch-0.90.10 # relative to the build directory
+  override:
+    - if [[ ! -e elasticsearch-0.90.10 ]]; then wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.10.tar.gz && tar -xvf elasticsearch-0.90.10.tar.gz
+    - elasticsearch-0.90.10/bin/elasticsearch: {background: true}
+
+database:
+  override:
+    - ps aux | grep elasticsearch
