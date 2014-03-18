@@ -6,4 +6,4 @@ machine:
 
 dependencies:
   pre:
-    for i in {1..100}; do echo ">"; done
+    - for i in {1..100}; do echo ">"; done
