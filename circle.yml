@@ -1,9 +1,10 @@
 machine:
   node:
     version: 0.8
-  services:
-    - riak
 
 dependencies:
   pre:
-    - for i in {1..100}; do echo ">"; done
+    - wget -O ~/play-2.2.3.zip http://downloads.typesafe.com/play/2.2.3/play-2.2.3.zip
+    - unzip -d ~/ -q ~/play-2.2.3.zip
+    - ln -sf ~/play-2.2.3/play ~/bin/play
+    - play --version
