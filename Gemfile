@@ -13,3 +13,4 @@
 source 'https://rubygems.org'
 
 gem 'launchy'
+gem 'simplecov', '~> 0.7.1'
