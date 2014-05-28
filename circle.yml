@@ -1,6 +1,8 @@
 machine:
   node:
     version: 0.10.25
+  java:
+    version: oraclejdk7
 
 dependencies:
   pre:
