@@ -3,6 +3,8 @@ machine:
     version: 0.10.25
   java:
     version: oraclejdk7
+  services:
+    - postgresql
 
 dependencies:
   pre:
