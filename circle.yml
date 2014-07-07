@@ -1,5 +1,3 @@
-machine:
-
 dependencies:
   pre:
     - printf "Host github.com\nIdentitiesOnly yes\nIdentityFile /home/ubuntu/.ssh/id_circleci_github\n" >> ~/.ssh/config
