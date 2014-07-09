@@ -7,5 +7,6 @@ dependencies:
     - ln -sf ~/play-2.2.3/play ~/bin/play
     - play --version
 
-
-
+general:
+  artifacts:
+    - /var/log/mysql
