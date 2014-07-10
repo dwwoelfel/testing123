@@ -10,3 +10,11 @@ dependencies:
 general:
   artifacts:
     - /var/log/mysql
+
+
+test:
+  pre:
+    - bundle exec rspec:
+         parallel: true
+         files:
+           - spec/**/*_spec.rb
