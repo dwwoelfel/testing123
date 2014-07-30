@@ -5,3 +5,5 @@ general:
 machine:
   services:
     - elasticsearch
+  python:
+    version: 2.7.6
