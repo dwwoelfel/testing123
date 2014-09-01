@@ -7,3 +7,15 @@ machine:
     - elasticsearch
   python:
     version: 2.7.8
+
+
+dependencies:
+  pre:
+    test:
+      - 1
+
+test:
+  post:
+    pre: 1
+
+
