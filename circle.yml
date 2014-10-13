@@ -5,5 +5,6 @@ general:
 machine:
   services:
     - elasticsearch
+    - solr
   python:
     version: 2.7.8
