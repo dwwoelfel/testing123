@@ -5,6 +5,18 @@ general:
 machine:
   services:
     - elasticsearch
-    - solr
   python:
     version: 2.7.8
+
+dependencies:
+  pre:
+    - wget https://circle-downloads.s3.amazonaws.com/jdk-8u20-linux-x64.gz
+    - tar -zxf jdk-8u20-linux-x64.gz
+    - sudo rm -r /usr/lib/jvm/jdk1.8.0
+    - sudo mv jdk1.8.0_20 /usr/lib/jvm/jdk1.8.0
+    - sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8.0/bin/java 1
+    - sudo update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.8.0/bin/javac 1
+    - sudo update-alternatives --install /usr/bin/javaws javaws /usr/lib/jvm/jdk1.8.0/bin/javaws 1
+    - sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0/bin/java
+    - sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0/bin/javac
+    - java -version
