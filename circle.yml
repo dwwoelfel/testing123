@@ -11,6 +11,7 @@ machine:
 test:
   override:
     - echo "$CIRCLE_NODE_INDEX" > $CIRCLE_ARTIFACTS/index.out
+    - cat $CIRCLE_ARTIFACTS/index.out
 
 deployment:
   production:
