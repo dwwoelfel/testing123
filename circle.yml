@@ -19,4 +19,4 @@ deployment:
   production:
     branch: perf
     commands:
-      - curl "https://circleci.com/api/v1/project/dwwoelfel/testing123/$CIRCLE_BUILD_NUM/artifacts/1/index.out"
+      - curl "https://circleci.com/api/v1/project/dwwoelfel/testing123/$CIRCLE_BUILD_NUM/artifacts/1/\$CIRCLE_ARTIFACTS/index.out"
