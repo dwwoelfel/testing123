@@ -7,3 +7,14 @@ machine:
     - elasticsearch
   python:
     version: 2.7.8
+
+test:
+  override:
+    - echo "$CIRCLE_NODE_INDEX" > index.out
+
+deployment:
+  production:
+    branch: perf
+    commands:
+      - echo "$CIRCLE_NODE_INDEX"
+
